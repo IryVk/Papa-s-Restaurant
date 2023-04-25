@@ -1,0 +1,199 @@
+#head {
+    background-color: rgba(0, 0, 0, 0.493);
+    background-image: url("../images/cart_pattern.jpg");
+    background-blend-mode: multiply;
+}
+
+body{
+    background-color: rgb(17,17,17);
+    color: #393939;
+	margin: 0;
+}
+
+table {
+    margin: auto;
+}
+
+.img img{
+    height: 9.5vw;
+}
+
+.img {
+    width: 20%;
+    margin: 5% 2% 0 2%;
+}
+
+h1, h2, h3, h4, h5 {
+	color: #523939;
+}
+.content-wrapper {
+	width: 1050px;
+    background-color: #f3f3f3;
+    padding: 40px;
+    margin: 1% auto 1%;
+    border-radius: 20px;
+}
+
+.slim{
+	max-width: 600px;
+	padding: 50px;
+}
+
+.cart h1 {
+	display: block;
+	font-weight: normal;
+	margin: 0;
+	padding: 40px 0;
+	font-size: 24px;
+	text-align: center;
+	width: 100%;
+}
+.cart table {
+	width: 100%;
+}
+.cart table thead td {
+	padding: 30px 0;
+	border-bottom: 1px solid #e0e0e0;
+    font-size: 1.2vw;
+}
+.cart table thead td:last-child {
+	text-align: right;
+}
+
+.cart table tr td span{
+    margin-left: 6%;
+}
+
+.cart table tbody td {
+	padding: 20px 0;
+	border-bottom: 1px solid #e0e0e0;
+}
+.cart table tbody td:last-child {
+	text-align: right;
+}
+.cart table .img {
+	width: 80px;
+}
+.cart table .remove {
+	color: #777777;
+	font-size: 14px;
+	padding-top: 3px;
+    margin-left: 6%;
+	border: none;
+	background-color: #39393900;
+	cursor: pointer;
+}
+.cart table .remove:hover {
+	color: #4d4d4d;
+}
+.cart table .price {
+	color: #555555;
+}
+.cart table a {
+	text-decoration: none;
+	color: #393939;
+}
+.cart table input[type="number"] {
+	width: 68px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	color: #393939;
+	border-radius: 5px;
+}
+.cart .subtotal {
+	text-align: right;
+	padding: 40px 0;
+}
+.cart .subtotal .text {
+	padding-right: 40px;
+	font-size: 18px;
+}
+.cart .subtotal .price {
+	font-size: 18px;
+	color: #555555;
+}
+.cart .buttons {
+	text-align: right;
+}
+.cart .buttons input[type="submit"] {
+	margin-left: 5px;
+	padding: 12px 20px;
+	border: 0;
+	background: rgb(155, 39, 37);
+	color: #f3f3f3;
+	font-size: 14px;
+	font-weight: bold;
+	cursor: pointer;
+	border-radius: 5px;
+}
+.cart .buttons input[type="submit"]:hover {
+	background: rgb(130, 2, 0);
+}
+.placeorder h1 {
+	display: block;
+	font-weight: normal;
+	margin: 0;
+	padding: 40px 0;
+	font-size: 24px;
+	text-align: center;
+	width: 100%;
+}
+.placeorder p {
+	text-align: center;
+}
+footer {
+	position: absolute;
+	bottom: 0;
+	border-top: 1px solid #EEEEEE;
+	padding: 20px 0;
+	width: 100%;
+}
+
+.slim input[type=text]{
+	width: 95%;
+	margin: 2% 0 2%;
+	background-color: #ccc;
+}
+
+.slim label {
+	margin: 5% 0 5%;
+}
+
+.slim select{
+	background-color: #ccc;
+	padding: 6px;
+	border: none;
+	width: auto;
+}
+
+.slim select:hover{
+	background-color: #b1b1b1;
+}
+
+.hidden {
+	display: none;
+}
+
+#smol {
+	display: inline;
+	width: 33.3%;
+}
+
+.right {
+	display: inline;
+	text-align: right;
+	margin-left: 2%;
+}
+
+.slim .buttons {
+	margin: 5% 0% 0 0;
+}
+
+textarea {
+	font-size: 14px;
+	margin-top: 3%;
+	padding: 10px;
+	border: none;
+	background-color: #ccc;
+	width: 97%;
+}

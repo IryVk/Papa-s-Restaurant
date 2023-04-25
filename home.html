@@ -1,93 +1,56 @@
 <!DOCTYPE html>
 
-<html>
-<head>
-    <title>Papa's Restaurant</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="papa's pizzeria"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sigmar|Noto Sans">
-    <link rel="stylesheet" href="styles.css" />
-    <script src="https://kit.fontawesome.com/87d2511ba9.js" crossorigin="anonymous"></script>
-    <script src="script.js" type="text/javascript"></script>
-    <style>
-        
-    </style>
-</head>
-<body>
-    <div class="flex-container" id="head">
-        <video id="background-video" autoplay muted loop id="myVideo">
-            <source src="images/cook.mp4" type="video/mp4">
-          </video>
-        <div id="logo">
-            <a href="home.html"><img id="logo_img" src="images/logo.png"></a>
+<html lang="en">
+    <head>
+    <title>Home</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="homepage">
+        <link rel="stylesheet" href="homestyle.css">
+        </head>
+        <body>
+        <div class="head">
+            <table>
+                <tr>
+                    <td>
+                        <img class="logo" src="logo.png">
+                    </td>
+                    <td>
+                        <span class="welcome">Welcome to Developers Joint!</span>
+                    </td>
+                </tr>
+            </table>
         </div>
-        <div id="welcome">
-            <h1>Welcome to Papa's Pizzeria!</h1>
+        <div class="links">
+            <a class="odd" href="home.html">Home</a>
+            <a class="even" href="courses.html">Table of Courses</a>
+            <a class="odd" href="apply.html">Apply Now</a>
+            <a class="even" href="fancy.html">Fancy CSS?</a>
         </div>
-        <div class="options">
-            <div class="dropdown">
-                <a href="#"><i class="fa-solid fa-user fa-2xl"></i></a>
-                <div class="dropdown-content" id="user">
-                  <a href="#">Account</a>
-                  <a href="#">Orders</a>
-                  <a href="#">Addressbook</a>
-                  <a href="#">Payment Cards</a>
-                  <a href="#">Logout</a>
-                </div>
-              </div>
+        <div class="infos" id="one">
+            <p class="parhead" id="who">Who are Developers?</p>
+            <br>
+            <blockquote>A developer is an individual that builds and create software and applications. He or she writes, debugs and executes the source code of a software application. A developer is also known as a software developer, computer programmer, programmer, software coder or software engineer.</blockquote>
+        <cite>-source "techopedia.com".</cite>
         </div>
-        <div class="options">
-            <a href="#" title="View Cart"><i class="fa-solid fa-cart-shopping fa-2xl badge" value=0></i></a>
+        <div class="infos" id="two">
+            <p class="parhead" id="type">Type of Developers</p>
+            <br>
+            <table>
+                <tr>
+                    <td><button>Front-End</button></td>
+                    <td><button>Back-End</button></td>
+                    <td><button>Full-Stack</button></td>
+                    <td><button>Middle-Tier</button></td>
+                    <td><button>Desktop</button></td>
+                    <td><button>Mobile</button></td>
+                </tr>
+            </table>
         </div>
-    </div>
-    <nav>
-        <table>
-            <tr>
-                <td>
-                    <a href="home.html">Home</a>
-                </td>
-                <td>
-                    <div class="dropdown">
-                        <a href="#">Menu <font style="font-size: 15px;">▼</font> </a>
-                        <div class="dropdown-content">
-                          <a href="#">Pizzas</a>
-                          <a href="#">Drinks</a>
-                          <a href="#">Appetizers</a>
-                        </div>
-                      </div>
-                </td>
-                <td>
-                    <a href="#">Contact</a>
-                </td>
-                <td>
-                    <a href="#">About</a>
-                </td>
-            </tr>
-        </table>
-    </nav>
-    <div class="container odd">
-        <img src="images/cheese.png" id="cheese">
-        <div class="flex-container" id="par">
-            <div id="intro">
-                <p>Satisfy your cravings with the best pizza in Egypt!</p>
-                <br><br>
-                <a href="menu.html" class="button" id="order">Order now <i class="fa-solid fa-arrow-right"></i></a>
-                <br><br><br>
-                <a href="menu.html" class="button" id="track">Track order</a>
-            </div>
-            <div id="intro_img"><img src="images/pizza.jpg" width="600px"></div>
+        <div class="infos" id="three">
+            <p class="parhead" id="check">Check Out Lastest Video</p>
+            <br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/qV4EzzQFgEg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
         </div>
-    </div>
-    <div class="container even" style="height: 4000px;">
-        <div>
-            <img src="images/sauce.png" id="sauce">
-            <h1 id="menu" class="reveal">Our Menu</h1>
-        </div>
-    </div>
-    <div class="footer flex-container">
-        <div class="col">© 2023 Papa's Pizzeria</div>
-    </div>
-
-</body>
+        </body>
 </html>

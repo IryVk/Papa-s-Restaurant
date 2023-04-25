@@ -1,0 +1,131 @@
+/* Error msgs */
+.error-input{
+    box-shadow: 0 0 5px rgba(247, 33, 65, 0.37);
+    border-color: rgb(222, 17, 52);
+}
+
+.modal * {box-sizing: border-box}
+/* Full-width input fields */
+  input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 5px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+.modal input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+    float: left;
+    width: 50%;
+    display: block;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.modal button:hover {
+  opacity:1;
+}
+
+.signupbtn {
+    background-color: rgb(42, 141, 42);
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  background-color: #f44336;
+}
+
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.747);
+  padding-top: 3vw;
+  z-index: 100;
+  overflow-y: auto;
+  
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 0% auto 15% auto;
+  border: none;
+  width: 35%;
+  border-radius: 15px;
+  padding: 30px;
+}
+
+/* Style the horizontal ruler */
+.modal hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 30.5vw;
+  top: 1vw;
+  font-size: 2.6vw;
+  color: #f57777;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 500px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+  }
+  .modal-content {
+    width: 80%;
+  }
+  .close {
+    position: absolute;
+    right: 10vw;
+    top: 1vw;
+    font-size: 6vw;
+    color: #f57777;
+  }
+}
+
+.blurry {
+    filter: blur(2px);
+}
+
+.danger, .dangerin {
+    color: #f44336;
+    margin: 1% 0 1% 0;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Application Form</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="apply">
+        <link rel="stylesheet" href="applystyle.css">
+    </head>
+    <body>
+        <div class="head">
+            <h1>APPLICATION FORM!</h1>
+        </div>
+        <div class="forms">
+            <form>
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label>Username</label>
+                    <input type="text" name="username" placeholder="Type username here" required>
+                    <label>Password</label>
+                    <br>
+                    <input id="password" type="password" name="password" placeholder="Type password here" required>
+                    <input class="toggle" type="checkbox" onclick="myFunction()"><span id="toggle">Show</span>
+                    <div style="clear: both;"></div>
+                    <label>Email</label>
+                    <input type="email" name="email" placeholder="Type email here" required>
+                    <label>Gender</label>
+                    <select>
+                        <option value="1">Female</option>
+                        <option value="2">Male</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Your Favorites</legend>
+                    <label>What language do you want to learn the most?</label>
+                    <br><br>
+                    <input class="mcq" type="radio" name="language" value="HTML"><span>HTML</span>
+                    <br>
+                    <input class="mcq" type="radio" name="language" value="CSS"><span>CSS</span>
+                    <br>
+                    <input class="mcq" type="radio" name="language" value="JavaScript"><span>JavaScript</span>
+                </fieldset>
+                <fieldset>
+                    <legend>Your Message</legend>
+                    <label>Describe yourself here</label>
+                    <br><br>
+                    <textarea placeholder="Tell us about you..."></textarea>
+                </fieldset>
+                <fieldset>
+                    <legend>Submit Answers</legend>
+                    <input class="mcq" type="checkbox">
+                    <label>Remember my answers</label>
+                    <br><br>
+                    <input class="mcq" id="sub" type="submit" name="submit">
+                    <br><br>
+                </fieldset>
+            </form>
+        </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("password");
+            var t = document.getElementById("toggle");
+            if (x.type === "password") {
+                x.type = "text";
+                t.innerText = 'Hide'
+            } else {
+                x.type = "password";
+                t.innerText = 'Show'
+            }
+        }
+    </script>
+    </body>
+</html>

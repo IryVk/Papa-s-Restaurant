@@ -1,0 +1,143 @@
+body {
+    background-color: rgb(247, 178, 31);
+}
+
+/* Page Header */
+#head {
+    background-image: url("../images/pattern1.png");
+    background-color: rgb(17, 17, 17);
+}
+
+/* Sauce Picture */
+#sauce {
+    margin: 0;
+}
+
+/* Flex Container Class used in menu.php */
+.just {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: auto auto auto auto;
+    overflow: hidden;
+    padding: 0 2% 2% 2%;
+}
+
+/* Menu Item Cards */
+.card {
+    background-color: #fff3e2e5;
+    border-radius: 1.3vw;
+    margin: 4% 2% 2% 2%;
+    flex-basis: 29.33%;
+    box-shadow: 0px 6px 14px 0px rgba(0,0,0,0.2);
+    height: 32vw;
+    padding-bottom: 6%;
+    transition: 0.75s all;
+}
+.card:hover {
+    transform: scale(1.1);
+}
+
+/* Img of items in menu */
+.img {
+    text-align: center;
+}
+.img img{
+    height: 10vw;
+    margin-top: 3%;
+    margin-bottom: 2%;
+}
+
+/* Item name in menu */
+.name {
+    padding: 3% 0% 3% 5%;
+    font-weight: 500;
+    font-size: 1.5vw;
+    background-color: rgb(130, 2, 0);
+    color: #fff3e2e5;
+    border-radius: 1.3vw 1.3vw 0 0;
+}
+
+/* Title of Pizza Menu */
+#pizzas {
+    margin-top: 5.3vw;
+}
+
+/* Titles of all menus */
+.menu-opt {
+    margin-top: 1.5vw;
+    text-align: center;
+    font-size: 2vw;
+    letter-spacing: 2px;
+    color: rgb(17, 17, 17);
+}
+
+hr {
+    width: 80%;
+    margin: 3% auto 2% auto;
+    border: none;
+    height: 0.05vw;
+    background-color: rgb(228, 135, 133);
+}
+
+/* ingredients in menu */
+.ing {
+    height: 30%;
+    overflow-y: auto;
+}
+.ing h3 {
+    margin: 0% 0 1% 4%;
+    font-weight: 600;
+    color: rgb(155, 39, 37);
+}
+.ing ul {
+    margin: 1% 0 3% 0%;
+    color: rgb(54, 54, 54);
+    list-style-type: circle;
+}
+
+/* Price and add to cart */
+.price, .add{
+    text-align: center;
+
+    font-size: 1.5vw;
+    color: rgb(155, 39, 37);
+}
+.add-bt {
+    display: block;
+    padding: 5% 10%;
+    font-size: 1.2vw;
+    border: none;
+    background-color: rgb(155, 39, 37);
+    color: #fff3e2e5;
+    border-radius: 2vw;
+    transition: 0.75s all;
+    margin: auto;
+    margin-top: 3%;
+}
+.add-bt:hover {
+    background-color: rgb(130, 2, 0);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#size {
+    border: none;
+    background-color: rgb(155, 39, 37);
+    padding: 10px;
+    color: #fff3e2e5;
+    border-radius: 5px;
+}
+
+#size:hover {
+    background-color: rgb(130, 2, 0);
+}
+
+input[type="number"] {
+	width: 68px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	color: #555555;
+	border-radius: 5px;
+}
