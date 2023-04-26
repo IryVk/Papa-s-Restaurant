@@ -73,8 +73,11 @@ The database connection is found in config directory. <br>
 ## About the Project
 A restaurant website that sells pizza.
 Users can sign up, put items in their cart, edit their cart, checkout, and track past orders.
-<br>
-demo goes here
+
+
+https://user-images.githubusercontent.com/114566375/234685769-47b36263-749c-4cdb-9dc0-88abc3d68152.mp4
+
+
 <br><br>
 ### Built With
 + <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white">
@@ -212,19 +215,19 @@ The goal of front-end development is to give users a friendly interface through 
 
 ### JavaScript Functions
 Some JavaScript functions used on the website include:
-+ addRed() which alerts the user if the PHP validation returned any problems.
++ addRed() which alerts the user if the PHP validation returned any problems. <br>
 ![image](https://user-images.githubusercontent.com/114566375/234672361-394947f3-24c0-4f7d-bcc6-79ffa2a5e82e.png)
 ![image](https://user-images.githubusercontent.com/114566375/234672464-e0326d13-4196-4610-a6fa-bd6fa814762a.png)
 `addRed() Function`
-+ •	forceLogin() which does not allow user to press checkout if they are not logged in.
++ •	forceLogin() which does not allow user to press checkout if they are not logged in. <br>
 ![image](https://user-images.githubusercontent.com/114566375/234672686-30349fd3-39bd-45ef-9b76-1e146914b46b.png)
 `forceLogin() Function`
-+	sizePrice() which dynamically calculates the price of different sized items when user changes size.
++	sizePrice() which dynamically calculates the price of different sized items when user changes size. <br>
 ![image](https://user-images.githubusercontent.com/114566375/234673261-8437608c-fed2-46b3-8640-6b68af493bb1.png)
 `sizePrice() Function`
-+	Function that restores scroll position when page refreshes after item is added to cart, so that user can have an uninterrupted shopping experience.
++	Function that restores scroll position when page refreshes after item is added to cart, so that user can have an uninterrupted shopping experience. <br>
 ![image](https://user-images.githubusercontent.com/114566375/234673471-022161f9-8447-4f48-845e-19a2444fc683.png)
-+ Function that shows/hides the credit card information form according to user’s choice.
++ Function that shows/hides the credit card information form according to user’s choice. <br>
 ![image](https://user-images.githubusercontent.com/114566375/234673630-7171a642-7769-4cea-a854-51f3827ef184.png)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
