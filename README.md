@@ -1,5 +1,15 @@
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-c66648af7eb3fe8bc4f294546bfd86ef473780cde1dea487d3c4ff354943c9ae.svg)](https://classroom.github.com/online_ide?assignment_repo_id=10631618&assignment_repo_type=AssignmentRepo)
 # CW1
+## Usage
+To run this project:
++	Clone the GitHub directory into xampp/htdocs folder (or your path if the default folder has been changed).
++	Then import the database into phpMyAdmin.
+
+### Admin Account Credentials
+Email: admin@admin.com
+<br>
+Password: Admin123@
+
 ## Idea: Papa's Pizza Restaurant
 A restaurant website that sells pizza.
 Users can sign up, put items in their cart, edit their cart, checkout, and track past orders.
@@ -81,4 +91,70 @@ The user can then add items to their cart. Cart items are stored in the `$_SESSI
 <br>
 `adding items to $_SESSION['cart'] when user presses add to cart`
 <br><br>
-The user can then edit or remove items from their cart operations.
+The user can then edit or remove items from their cart.
+<br>
+![image](https://user-images.githubusercontent.com/114566375/234668538-e0009121-5212-4e91-b3f8-9e8a0fd24a7a.png)
+<br>
+`Remove and update items in cart`
+<br><br>
+When the user wants to checkout, they need to press the checkout button to get permission to access the checkout page.
+<br>
+![image](https://user-images.githubusercontent.com/114566375/234668781-d524d5a7-22c5-48e9-b6a7-05cace44bb01.png)
+<br>
+`gaining permission`
+<br><br>
+![image](https://user-images.githubusercontent.com/114566375/234669015-71ed4b4f-bdca-465a-b40d-f28ef710e21b.png)
+<br>
+`checking permission on checkout page`
+<br><br>
+
+### INSERT Operations (CREATE)
+The user can then input their address and card details if they wish to pay by card (the inputs are validated in the back-end similar to the sign-up process). After the order is confirmed, PHP inserts that data into the database following the structure mentioned in the previous section.
+<br>
+![image](https://user-images.githubusercontent.com/114566375/234669481-cdfa10b7-4c0c-4bdc-b34c-4f451e7b5837.png)
+![image](https://user-images.githubusercontent.com/114566375/234669571-d683b6f9-7b05-46e4-96de-33553c3bff7c.png)
+`inserting information into database`
+<br><br>
+The user is then redirected to their orders page where PHP fetches info about all their past orders and displays it.
+<br>
+![image](https://user-images.githubusercontent.com/114566375/234669767-19c978c3-1400-4a64-900d-04aca0fffa58.png)
+<br>
+`getting orders info using user id`
+<br><br>
+
+### UPDATE and DELETE Operations
+If the user has admin privileges, they can update or remove orders from the database using UPDATE and DELETE operations in MYSQL. With admin privileges, the user can access a page that was previously restricted and edit orders (admin credentials found above).
+<br>
+![image](https://user-images.githubusercontent.com/114566375/234671677-3bd031ba-c378-4a20-9311-feb633d11252.png)
+<br>
+`UPDATE and DELETE operations`
+
+### Cookies
+The search function of the website utilizes reading data from the database and cookies to store user’s recent searches to improve user experience.
+<br>
+![image](https://user-images.githubusercontent.com/114566375/234671879-645bd293-ff1a-4233-8389-7582a552d30d.png)
+<br>
+`cookies and search`
+<br><br>
+
+## HTML, CSS, and JavaScript
+The goal of front-end development is to give users a friendly interface through which they can use the application. HTML was used to create the basic website and CSS was used to stylize it and give it a unique touch. JavaScript functions were used to create a dynamic web experience that suits the user.
+
+### JavaScript Functions
+Some JavaScript functions used on the website include:
++ addRed() which alerts the user if the PHP validation returned any problems.
+![image](https://user-images.githubusercontent.com/114566375/234672361-394947f3-24c0-4f7d-bcc6-79ffa2a5e82e.png)
+![image](https://user-images.githubusercontent.com/114566375/234672464-e0326d13-4196-4610-a6fa-bd6fa814762a.png)
+`addRed() Function`
++ •	forceLogin() which does not allow user to press checkout if they are not logged in.
+![image](https://user-images.githubusercontent.com/114566375/234672686-30349fd3-39bd-45ef-9b76-1e146914b46b.png)
+`forceLogin() Function`
++	sizePrice() which dynamically calculates the price of different sized items when user changes size.
+![image](https://user-images.githubusercontent.com/114566375/234673261-8437608c-fed2-46b3-8640-6b68af493bb1.png)
+`sizePrice() Function`
++	Function that restores scroll position when page refreshes after item is added to cart, so that user can have an uninterrupted shopping experience.
+![image](https://user-images.githubusercontent.com/114566375/234673471-022161f9-8447-4f48-845e-19a2444fc683.png)
++ Function that shows/hides the credit card information form according to user’s choice.
+![image](https://user-images.githubusercontent.com/114566375/234673630-7171a642-7769-4cea-a854-51f3827ef184.png)
+
+
