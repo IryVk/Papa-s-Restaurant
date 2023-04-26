@@ -1,0 +1,5 @@
+#head {
+    background-color: rgba(0, 0, 0, 0.493);
+    background-image: url("../images/cart_pattern.jpg");
+    background-blend-mode: multiply;
+}

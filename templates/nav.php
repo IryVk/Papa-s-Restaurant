@@ -15,14 +15,14 @@
                 </div>
             </td>
             <td>
-                <a href="contact.php">Contact</a>
-            </td>
-            <td>
             <?php if ($current_email == "admin@admin.com"){ ?>
                 <a href="index.php">Admin</a>
             <?php } else { ?>
-                <a href="about.php">About</a>
+                <a href="orders.php">Orders</a>
             <?php } ?>
+            </td>
+            <td>
+                <a href="search.php">Search</a>
             </td>
         </tr>
     </table>

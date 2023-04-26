@@ -2,33 +2,9 @@
 
 // include db
 include("config/db_connect.php");
-// strat session if not started
-if (session_status() === PHP_SESSION_NONE) {
-    session_start();
-}
 
-if (isset($_POST['remove'])){
-    for ($i = 0; $i < count($_SESSION['cart']); $i++){
-        if ($_POST['del_id'] == $_SESSION['cart'][$i]['product_id']){
-            array_splice($_SESSION['cart'], $i, 1);
-            header('Location: ?');
-            exit();
-        }
-    }
-}
-
-if (isset($_POST['update'])){
-    for ($i = 0; $i < count($_SESSION['cart']); $i++){
-        if ($_SESSION['cart'][$i]['quantity'] != $_POST['quantity-'.$_SESSION['cart'][$i]['product_id']]){
-            $_SESSION['cart'][$i]['quantity'] = $_POST['quantity-'.$_SESSION['cart'][$i]['product_id']];
-        }
-    }
-}
-if (isset($_POST['placeorder'])){
-    $_SESSION['fromMain'] = true;
-    header('Location: checkout.php');
-    exit();
-}
+// include cart code
+include("includes/cart_page.inc.php")
 
 
 ?>
@@ -40,7 +16,7 @@ if (isset($_POST['placeorder'])){
 
 <html>
 <head>
-    <title>Papa's Restaurant</title>
+    <title>Papa's Cart</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="papa's pizzeria"/>
@@ -50,7 +26,6 @@ if (isset($_POST['placeorder'])){
     <link rel="stylesheet" href="styles/nav_foot_style.css">
     <link rel="stylesheet" href="styles/cart_style.css">
     <script src="https://kit.fontawesome.com/87d2511ba9.js" crossorigin="anonymous"></script>
-    <script src="scripts/script.js" type="text/javascript"></script>
 </head>
 <body>
     <div class="flex-container" id="head">
@@ -120,6 +95,7 @@ if (isset($_POST['placeorder'])){
             <div class="subtotal">
                 <span class="text">Subtotal</span>
                 <span class="price"><?=$subtotal?> L.E.</span>
+                <?php $_SESSION['total'] = $subtotal; ?>
             </div>
             <div class="buttons">
                 <input type="submit" value="Apply Changes" name="update">
@@ -128,13 +104,6 @@ if (isset($_POST['placeorder'])){
             <?php endif; ?>
         </form>
     </div>
-    
+    <script src="scripts/script.js" type="text/javascript"></script>
 </body>
-<script>
-    // stop submitting if user isn't logged in
-    function forceLogin(event){
-        event.preventDefault();
-        document.getElementById('signup').style.display='block';
-    }
-</script>
 </html>

@@ -141,3 +141,19 @@ input[type="number"] {
 	color: #555555;
 	border-radius: 5px;
 }
+
+.search {
+    margin: 7% auto 1%;
+    width: 30%;
+}
+
+.search input {
+    font-size: 14px;
+}
+
+.search-bt .add-bt {
+    padding: 15px 30px;
+    font-size: 16px;
+    margin-top: none;
+}
+

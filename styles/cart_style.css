@@ -27,6 +27,7 @@ h1, h2, h3, h4, h5 {
 	color: #523939;
 }
 .content-wrapper {
+	display: block;
 	width: 1050px;
     background-color: #f3f3f3;
     padding: 40px;
@@ -34,7 +35,12 @@ h1, h2, h3, h4, h5 {
     border-radius: 20px;
 }
 
+.thin {
+	max-width: 400px;
+}
+
 .slim{
+	margin: 2% auto 2% auto;
 	max-width: 600px;
 	padding: 50px;
 }
@@ -89,7 +95,8 @@ h1, h2, h3, h4, h5 {
 .cart table .price {
 	color: #555555;
 }
-.cart table a {
+.cart table a, .slim a {
+	font-size: 14px;
 	text-decoration: none;
 	color: #393939;
 }
@@ -114,6 +121,7 @@ h1, h2, h3, h4, h5 {
 }
 .cart .buttons {
 	text-align: right;
+	margin-bottom: 3%;
 }
 .cart .buttons input[type="submit"] {
 	margin-left: 5px;
@@ -141,30 +149,30 @@ h1, h2, h3, h4, h5 {
 .placeorder p {
 	text-align: center;
 }
-footer {
-	position: absolute;
-	bottom: 0;
-	border-top: 1px solid #EEEEEE;
-	padding: 20px 0;
-	width: 100%;
-}
 
-.slim input[type=text]{
+.slim input[type=text], .thin input[type=text]{
 	width: 95%;
 	margin: 2% 0 2%;
 	background-color: #ccc;
+}
+
+.thin input {
+	text-align: right;
+	font-size: 14px;
 }
 
 .slim label {
 	margin: 5% 0 5%;
 }
 
-.slim select{
+.slim select, .cart select{
 	background-color: #ccc;
-	padding: 6px;
+	padding: 8px;
 	border: none;
 	width: auto;
+	font-size: 14px;
 }
+
 
 .slim select:hover{
 	background-color: #b1b1b1;
@@ -176,7 +184,7 @@ footer {
 
 #smol {
 	display: inline;
-	width: 33.3%;
+	width: 25%;
 }
 
 .right {

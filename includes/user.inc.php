@@ -11,12 +11,12 @@ $password = "";
 $name = "";
 $phone = "";
 
+// get past emails to check if user email is repeated
 $q = "SELECT email FROM person";
 $result = mysqli_query($conn, $q);
 $past_emails = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
-// ======= VALIDATION ======= //
-// ===== sign up ===== //
+// ========== SIGN UP ========== //
 if (isset($_POST['submit'])){
     // ==== Variables ==== //
     $email = $_POST['email'];
@@ -25,6 +25,7 @@ if (isset($_POST['submit'])){
     $name = $_POST['name'];
     $phone = $_POST['phone'];
 
+    // ==== validation ==== //
     // not empty
     if (empty($email)){
         $errors["email"] = "Do not leave email field empty";
@@ -48,7 +49,8 @@ if (isset($_POST['submit'])){
     $specialChars = preg_match('@[^\w]@', $password);
     // not empty password
     if (empty($password)){
-        $errors["password"] = "Do not leave password field empty";        
+        $errors["password"] = "Do not leave password field empty";     
+    //regex to measure strength   
     } else if(!$uppercase || !$lowercase || !$number || !$specialChars || strlen($password) < 8) {
         $errors["password"] = 'Password should be at least 8 characters in length and should include at least one upper case letter, one number, and one special character';
     }
@@ -61,7 +63,7 @@ if (isset($_POST['submit'])){
     // not empty and valid phone number
     if (empty($phone)){
         $errors["phone"] = "Do not leave phone field empty";        
-    }else if(!preg_match('/^[0-9]{11}+$/', $phone)) {
+    }else if(!preg_match('/^[0-9]{11}$/', $phone)) {
         $errors["phone"] = "Enter a valid phone number";
     }
 
@@ -85,10 +87,11 @@ if (isset($_POST['submit'])){
         exit();
     }
 }
-// ===== sign in ===== //
+// ======== SIGN IN ======== //
 if (isset($_POST['submitin'])){
     $email = $_POST['emailin'];
     $password = $_POST['pswin'];
+
     // bool to know if email has account
     $found = false;
     if (empty($email)){

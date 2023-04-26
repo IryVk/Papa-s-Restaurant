@@ -1,19 +1,16 @@
-function reveal() {
-    var reveals = document.querySelectorAll(".reveal");
-    for (var i = 0; i < reveals.length; i++) {
-        var windowHeight = window.innerHeight;
-        var elementTop = reveals[i].getBoundingClientRect().top;
-        var elementVisible = 100;
-        if (elementTop < windowHeight - elementVisible) {
-            reveals[i].classList.add("active");
-        } 
-        // else {
-        //     reveals[i].classList.remove("active");
-        // }
+// stop submitting if user isn't logged in
+function forceLogin(event){
+    event.preventDefault();
+    document.getElementById('signup').style.display='block';
+}
+
+// add danger attribte to wrong fields
+function addRed(){
+    divs = document.getElementsByClassName("danger")
+    for (var i =0; i < divs.length; i++){
+        if (divs[i].innerText != ""){ 
+            divs[i].previousElementSibling.className = "error-input";
+        }
     }
-  }
-
-window.addEventListener("scroll", reveal);
-
-// To check the scroll position on page load
-reveal();
+    }
+addRed();

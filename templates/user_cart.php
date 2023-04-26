@@ -1,10 +1,10 @@
 <?php
 
-// ===== include validation and login ===== //
-include("templates/validation.php");
+// include validation and login //
+include("includes/user.inc.php");
 
 // include cart code
-include("templates/cart.inc.php");
+include("includes/cart.inc.php");
 
 ?>
 
@@ -17,8 +17,8 @@ include("templates/cart.inc.php");
                 <div class="dropdown-content" id="user">
                 <!-- show this if user logged in -->
                 <?php if ($current_username != ""){ ?>
-                    <a href="#">Account</a>
-                    <a href="#">Orders</a>
+                    <a href="account.php">Account</a>
+                    <a href="orders.php">Orders</a>
                     <a href="templates/logout.php">Logout</a>
                 <?php }else { ?>
                     <a href="#" onclick="document.getElementById('signup').style.display='block'">Sign Up/In</a>

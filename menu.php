@@ -4,7 +4,7 @@
 include("config/db_connect.php");
 
 // include menu functions
-include("templates/menu.inc.php");
+include("includes/menu.inc.php");
 
 
     
@@ -25,7 +25,6 @@ mysqli_close($conn);
     <link rel="stylesheet" href="styles/nav_foot_style.css">
     <link rel="stylesheet" href="styles/sign_style.css">
     <script src="https://kit.fontawesome.com/87d2511ba9.js" crossorigin="anonymous"></script>
-    <script src="scripts/script.js" type="text/javascript"></script>
 </head>
 <body>
     <!-- This Part is the Head -->
@@ -86,7 +85,7 @@ mysqli_close($conn);
         <?php } ?>
     </div>
     <!-- This is the appetizers menu -->
-    <h2 class="menu-opt" id="appt">Appetizers</h2>
+    <h2 class="menu-opt" id="appt"><i class="fa-solid fa-pepper-hot" style="color: rgb(130, 2, 0);"></i> Appetizers</h2>
         <div class="flex-container just">
             <?php foreach($sides as $side){ ?>
                 <div class="card">
@@ -128,7 +127,7 @@ mysqli_close($conn);
             <?php } ?>
         </div>
         <!-- This is the drinks menu -->
-        <h2 class="menu-opt" id="drinks"><i class="fa-solid fa-champagne-glasses"></i> Drinks</h2>
+        <h2 class="menu-opt" id="drinks"><i class="fa-solid fa-champagne-glasses" style="color: rgb(130, 2, 0);"></i> Drinks</h2>
         <div class="flex-container just">
             <?php foreach($drinks as $drink){ ?>
                 <div class="card">
