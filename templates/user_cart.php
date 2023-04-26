@@ -142,16 +142,6 @@ include("includes/cart.inc.php");
         }
     }
 
-    // Get the modal
-    var modal = document.getElementById('signin');
-
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    }
-
     // toggle show and hide of password
     function show() {
         var t = document.getElementById("toggle");
