@@ -10,7 +10,7 @@ Email: admin@admin.com
 <br>
 Password: Admin123@
 
-## Idea: Papa's Pizza Restaurant
+## About the Project
 A restaurant website that sells pizza.
 Users can sign up, put items in their cart, edit their cart, checkout, and track past orders.
 <br>
@@ -156,5 +156,12 @@ Some JavaScript functions used on the website include:
 ![image](https://user-images.githubusercontent.com/114566375/234673471-022161f9-8447-4f48-845e-19a2444fc683.png)
 + Function that shows/hides the credit card information form according to user’s choice.
 ![image](https://user-images.githubusercontent.com/114566375/234673630-7171a642-7769-4cea-a854-51f3827ef184.png)
+
+## Contact
+
+Arwa Essam Abdelaziz - aa2101585@tkh.edu.eg
+
+Project Link: [https://github.com/Coventry-TKH/coursework-1-IryVk](https://github.com/Coventry-TKH/coursework-1-IryVk)
+
 
 
