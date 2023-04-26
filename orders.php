@@ -9,7 +9,9 @@ include("includes/orders.inc.php")
 
 ?>
 
+<!DOCTYPE html>
 
+<html>
 <head>
     <title>Papa's Orders</title>
     <meta charset="utf-8" />

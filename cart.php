@@ -11,8 +11,6 @@ include("includes/cart_page.inc.php")
 
 
 <!DOCTYPE html>
-<html>
-<!DOCTYPE html>
 
 <html>
 <head>

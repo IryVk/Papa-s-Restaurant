@@ -134,11 +134,13 @@ include("includes/cart.inc.php");
 <script>
     // Get the modal
     var modal = document.getElementById('signup');
+    var modal2 = document.getElementById('signin');
 
     // When the user clicks anywhere outside of the modal, close it
     window.onclick = function(event) {
-        if (event.target == modal) {
+        if (event.target == modal || event.target == modal2) {
             modal.style.display = "none";
+            modal2.style.display = "none";
         }
     }
 

@@ -8,7 +8,9 @@ include("includes/index.inc.php");
 
 ?>
 
+<!DOCTYPE html>
 
+<html>
 <head>
     <title>Papa's Admin</title>
     <meta charset="utf-8" />
