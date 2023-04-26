@@ -20,5 +20,5 @@ if (isset($_SESSION['username'])){
 
 
 <div id="logo">
-    <a href="home.php"><img id="logo_img" src="images/logo1.png"></a>
+    <a href="index.php"><img id="logo_img" src="images/logo1.png"></a>
 </div>

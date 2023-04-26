@@ -21,7 +21,7 @@ if (isset($_SESSION['username'])){
 // check if user is authorized to access
 if(!$_SESSION['fromMain']){
     //send user back
-    header("Location: home.php");
+    header("Location: index.php");
 }else{
     //reset the variable
     $_SESSION['fromMain'] = "false";

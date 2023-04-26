@@ -34,7 +34,7 @@ if (isset($_POST['update'])){
     $order_id = $_POST['order_id'];
     $q = "UPDATE `orders` SET status = '$temp' WHERE id LIKE '$order_id'";
     mysqli_query($conn, $q);
-    header("Location: index.php");
+    header("Location: index_a.php");
     exit();
 }
 
@@ -44,7 +44,7 @@ if (isset($_POST['delete'])){
     $order_id = $_POST['order_id'];
     $q = "DELETE FROM `orders` WHERE id LIKE '$order_id'";
     mysqli_query($conn, $q);
-    header("Location: index.php");
+    header("Location: index_a.php");
     exit();
 }
 

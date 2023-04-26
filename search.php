@@ -41,7 +41,7 @@ include("includes/search.inc.php")
     <img src="images/sauce.png" id="sauce">
     <form action="search.php" method="POST">
         <div class="search">
-            <h3>Recent Searches: <a href="search.php?val=<?=$recent?>"><?=$recent?></a></h3>
+            <h3 class="recent">Recent Searches: <a href="search.php?val=<?=$recent?>"><?=$recent?></a></h3>
             <input type="text" name="query" placeholder="What are you craving?">
             <div class="danger"><p><?=$errors_search ?></p></div>
         </div>
@@ -96,36 +96,7 @@ include("includes/search.inc.php")
         <h2 class="menu-opt" id="results">No pizzas found :c</h2>
     <?php endif ?>
     <?php endif ?>
-    <script>
-        // grab elements for the size changing
-        var elements = document.getElementsByTagName("select");
-
-        // call back for changing size
-        sizePrice = function(){
-            // grab real price in invisible div
-            var real_price = this.parentNode.parentNode.previousElementSibling.childNodes[5].innerText;
-            // grab current displayed price
-            var current_price = this.parentNode.parentNode.previousElementSibling.childNodes[1];
-            console.log(real_price);
-            // do calcs depending on size
-            if (this.value == "s"){
-                x = real_price;
-                current_price.innerText = Math.round(x) + " L.E.";
-            }  
-            else if (this.value == "m"){
-                x = parseFloat(real_price) * 0.5 + parseFloat(real_price);
-                current_price.innerText = Math.round(x) + " L.E.";
-            }
-            else if (this.value == "l"){
-                x = parseFloat(real_price) * 0.9 + parseFloat(real_price);
-                current_price.innerText = Math.round(x) + " L.E.";
-            }   
-        }
-        // add event listeners to all elements
-        for (var i = 0; i < elements.length; i++) {
-            elements[i].addEventListener('click', sizePrice, false);
-        }
-    </script>
+    <script src="scripts/menu_script.js"></script>
     <script src="scripts/script.js" type="text/javascript"></script>
     <?php unset($products) ?>
 </body>

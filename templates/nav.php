@@ -2,7 +2,7 @@
     <table>
         <tr>
             <td>
-                <a href="home.php">Home</a>
+                <a href="index.php">Home</a>
             </td>
             <td>
                 <div class="dropdown">
@@ -16,7 +16,7 @@
             </td>
             <td>
             <?php if ($current_email == "admin@admin.com"){ ?>
-                <a href="index.php">Admin</a>
+                <a href="index_a.php">Admin</a>
             <?php } else { ?>
                 <a href="orders.php">Orders</a>
             <?php } ?>

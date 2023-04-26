@@ -19,7 +19,7 @@ if (isset($_SESSION['username'])){
 // check if user is authorized to access
 if(empty($current_username)){
     //send user back
-    header("Location: home.php");
+    header("Location: index.php");
 }
 
 // grab person details

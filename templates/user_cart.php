@@ -13,7 +13,7 @@ include("includes/cart.inc.php");
 <div class="options">
             <div class="dropdown">
                 <!-- php tag to only display login if user is logged in -->
-            <i class="fa-solid fa-user fa-2xl" onclick="<?php if ($current_username == ""){ echo "document.getElementById('signup').style.display='block'"; } ?>"></i>
+            <a <?php if (!$current_username == ""){ echo "href='account.php'"; } ?>><i class="fa-solid fa-user fa-2xl" onclick="<?php if ($current_username == ""){ echo "document.getElementById('signup').style.display='block'"; } ?>"></i></a>
                 <div class="dropdown-content" id="user">
                 <!-- show this if user logged in -->
                 <?php if ($current_username != ""){ ?>
