@@ -44,6 +44,9 @@ if (isset($_POST['delete'])){
     $order_id = $_POST['order_id'];
     $q = "DELETE FROM `orders` WHERE id LIKE '$order_id'";
     mysqli_query($conn, $q);
+    // delete order details
+    $q = "DELETE FROM `order_details` WHERE order_id LIKE '$order_id'";
+    mysqli_query($conn, $q);
     header("Location: index_a.php");
     exit();
 }
