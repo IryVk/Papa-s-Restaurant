@@ -1,5 +1,38 @@
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-c66648af7eb3fe8bc4f294546bfd86ef473780cde1dea487d3c4ff354943c9ae.svg)](https://classroom.github.com/online_ide?assignment_repo_id=10631618&assignment_repo_type=AssignmentRepo)
+<a name="readme-top"></a>
+
 # CW1
+
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li><a href="#usage">Usage</a></li>
+    <ul>
+        <li><a href="#admin-account-credentials">Admin Account Credentials</a></li>
+        <li><a href="file-structure">File Structure</a></li>
+      </ul>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+        <li><a href="important-features">Important Features</a></li>
+      </ul>
+    </li>
+    <li><a href="#database">Database</a></li>
+    <li><a href="#php">PHP</a></li>
+    <ul>
+      <li><a href="sessions">Sessions</a></li>
+      <li><a href="SELECT-Operations-(READ)">SELECT Operations (READ)</a></li>
+      <li><a href="INSERT-Operations-(CREATE)">INSERT Operations (CREATE)</a></li>
+      <li><a href="UPDATE-and-DELETE-Operations">UPDATE and DELETE Operations</a></li>
+      <li><a href="cookies">Cookies</a></li>
+    </ul>
+    <li><a href="#frontend">Frontend</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ol>
+</details>
+
 ## Usage
 To run this project:
 +	Clone the GitHub directory into xampp/htdocs folder (or your path if the default folder has been changed).
@@ -10,13 +43,47 @@ Email: admin@admin.com
 <br>
 Password: Admin123@
 
+### File Structure
+All pages that can be visited are found in the main directory:
+<ul>
+  <li>	index.php: home page </li>
+  <li>	index_a.php: admin only home page </li>
+  <li>	menu.php:  menu </li>
+  <li>	cart.php: view cart page </li>
+  <li>	orders.php: see all placed orders // displays delete and change status in administrative mode </li>
+  <li>	checkout.php: chechout page </li>
+  <li>	search.php: search page </li>
+</ul>
+Scripts (JS) are found in the scripts directory. <br>
+CSS style sheets are found in the styles directory. <br>
+Commonly used code (like nav bar, footer, sign up/log in, user / cart icons) are found in templates:
+<ul>
+  <li>	footer.php </li>
+  <li>	logo.php </li>
+  <li>	logout.php </li>
+  <li>	nav.php </li>
+  <li>	user_cart.php: contains the login modal box and the cart + user icons </li>
+</ul>
+PHP dependencies of the pages can be found in includes directory. <br>
+Images and other cosmetics are found in the images directory. <br>
+The database connection is found in config directory. <br>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
 ## About the Project
 A restaurant website that sells pizza.
 Users can sign up, put items in their cart, edit their cart, checkout, and track past orders.
 <br>
 demo goes here
 <br><br>
-Important Features:
+### Built With
++ <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white">
++ <img src="https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white">
++ <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E">
++ <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
++ <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
+
+###Important Features:
 + Signup/Login Modal Box
 + Home Page
 + Cart System
@@ -40,8 +107,9 @@ Important Features:
 <em>Cart</em>
 <br><br>
 </p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Database Structure
+## Database
 The database structure is illustrated in the figure below: 
 <br><br>
 <img src="https://user-images.githubusercontent.com/114566375/234658095-5e96c55d-b3b9-4a55-9494-19c51b67730f.png">
@@ -56,6 +124,7 @@ Then, the order is stored in the `order` table along with the user id, address i
 The order id is then stored in the `order_details` table, which contains the id for the products, the id for the size, the individual item price, and the quantity. This information is separated from the `orders` table to prevent clutter and make the tables more readable.
 <br>
 With the aforementioned structure, data is well organized and PHP scripts can easily access and navigate information. In the following section, the mechanism of the server-side scripts will be explained in detail.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## PHP
 
@@ -136,8 +205,9 @@ The search function of the website utilizes reading data from the database and c
 <br>
 `cookies and search`
 <br><br>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## HTML, CSS, and JavaScript
+## Frontend
 The goal of front-end development is to give users a friendly interface through which they can use the application. HTML was used to create the basic website and CSS was used to stylize it and give it a unique touch. JavaScript functions were used to create a dynamic web experience that suits the user.
 
 ### JavaScript Functions
@@ -156,12 +226,14 @@ Some JavaScript functions used on the website include:
 ![image](https://user-images.githubusercontent.com/114566375/234673471-022161f9-8447-4f48-845e-19a2444fc683.png)
 + Function that shows/hides the credit card information form according to user’s choice.
 ![image](https://user-images.githubusercontent.com/114566375/234673630-7171a642-7769-4cea-a854-51f3827ef184.png)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Contact
 
 Arwa Essam Abdelaziz - aa2101585@tkh.edu.eg
 
 Project Link: [https://github.com/Coventry-TKH/coursework-1-IryVk](https://github.com/Coventry-TKH/coursework-1-IryVk)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
