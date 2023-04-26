@@ -10,23 +10,23 @@
     <li><a href="#usage">Usage</a></li>
     <ul>
         <li><a href="#admin-account-credentials">Admin Account Credentials</a></li>
-        <li><a href="file-structure">File Structure</a></li>
+        <li><a href="#file-structure">File Structure</a></li>
       </ul>
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
-        <li><a href="important-features">Important Features</a></li>
+        <li><a href="#important-features">Important Features</a></li>
       </ul>
     </li>
     <li><a href="#database">Database</a></li>
     <li><a href="#php">PHP</a></li>
     <ul>
-      <li><a href="sessions">Sessions</a></li>
-      <li><a href="SELECT-Operations-(READ)">SELECT Operations (READ)</a></li>
-      <li><a href="INSERT-Operations-(CREATE)">INSERT Operations (CREATE)</a></li>
-      <li><a href="UPDATE-and-DELETE-Operations">UPDATE and DELETE Operations</a></li>
-      <li><a href="cookies">Cookies</a></li>
+      <li><a href="#sessions">Sessions</a></li>
+      <li><a href="#select-operations-read">SELECT Operations (READ)</a></li>
+      <li><a href="#insert-operations-create">INSERT Operations (CREATE)</a></li>
+      <li><a href="#update-and-delete-operations">UPDATE and DELETE Operations</a></li>
+      <li><a href="#cookies">Cookies</a></li>
     </ul>
     <li><a href="#frontend">Frontend</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -83,7 +83,7 @@ demo goes here
 + <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
 + <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
 
-###Important Features:
+### Important Features:
 + Signup/Login Modal Box
 + Home Page
 + Cart System
