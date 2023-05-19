@@ -77,7 +77,11 @@ A restaurant website that sells pizza.
 Users can sign up, put items in their cart, edit their cart, checkout, and track past orders.
 
 
-https://user-images.githubusercontent.com/114566375/234685769-47b36263-749c-4cdb-9dc0-88abc3d68152.mp4
+
+
+https://github.com/IryVk/Papa-s-Restaurant/assets/114566375/0e6442d9-acce-42fd-bd15-a50bd6c277fb
+
+
 
 
 <br><br>
