@@ -53,7 +53,7 @@ include("includes/reviews.inc.php")
                 }
             } else {
                 // No reviews yet
-                echo "<div class='review'>No reviews yet.</div>";
+                echo "<div class='review'><h4>No reviews yet.</h4></div>";
             }
 
             // Function to generate star rating
@@ -75,19 +75,24 @@ include("includes/reviews.inc.php")
                 
                 // Display review form
                 // Display review form
-                echo "<h3>Leave a Review</h3>";
-                echo "<form action='reviews.php' method='POST'>";
-                echo "<input type='hidden' name='email' value='$email'>"; // Use the fetched email as a hidden input
-                echo "<textarea name='review' placeholder='Tell us your opinion!' required></textarea><br>";
-                echo "<div class='rating'>";
-                echo "<input type='radio' id='star5' name='rating' value='5'><label for='star5'></label>";
-                echo "<input type='radio' id='star4' name='rating' value='4'><label for='star4'></label>";
-                echo "<input type='radio' id='star3' name='rating' value='3'><label for='star3'></label>";
-                echo "<input type='radio' id='star2' name='rating' value='2'><label for='star2'></label>";
-                echo "<input type='radio' id='star1' name='rating' value='1' checked><label for='star1'></label>";
-                echo "</div>";
-                echo "<div class='buttons'><input name='submit_review' type='submit' value='Submit Review'></div>";
-                echo "</form>";
+                echo "<div class='leave-review'>
+                        <h3>Leave a Review</h3>
+                        <form action='reviews.php' method='POST'>
+                        <input type='hidden' name='email' value='$email'>
+                        <textarea name='review' placeholder='Tell us your opinion!' required></textarea><br>
+                        <div class='rating'>
+                            <input type='radio' id='star5' name='rating' value='5'><label for='star5'></label>
+                            <input type='radio' id='star4' name='rating' value='4'><label for='star4'></label>
+                            <input type='radio' id='star3' name='rating' value='3'><label for='star3'></label>
+                            <input type='radio' id='star2' name='rating' value='2'><label for='star2'></label>
+                            <input type='radio' id='star1' name='rating' value='1' checked><label for='star1'></label>
+                        </div>
+                        <div class='buttons'>
+                            <input name='submit_review' type='submit' value='Submit Review'>
+                        </div>
+                        </form>
+                        </div>
+                      </div>";
             }
         ?>
     </div>

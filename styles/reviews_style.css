@@ -12,7 +12,7 @@ display: none;
 display: inline-block;
 padding: 5px;
 font-size: 35px;
-color: #ccc;
+color: #cccccc;
 cursor: pointer;
 }
 
@@ -24,11 +24,11 @@ color: #ffcc00;
 
 .rating label:before {
 content: '\2605';
-color: #ccc;
+color: #cccccc;
 }
 
 .review {
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 10px;
@@ -36,10 +36,9 @@ color: #ccc;
 }
   
 .review p {
-    margin: 10px;
-    padding: 10px;
+    padding: 10px 0 0 0;
     display: block;
-    background-color: #e4e4e4;
+
     border-radius: 10px;
 }
   
@@ -55,4 +54,8 @@ color: #ccc;
 .review-email {
     font-weight: bold;
 }
-  
+
+.leave-review{
+    padding: 10px;
+    margin-bottom: 10px;
+}
