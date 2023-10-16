@@ -24,6 +24,9 @@
             <td>
                 <a href="search.php">Search</a>
             </td>
+            <td>
+                <a href="reviews.php">Reviews</a>
+            </td>
         </tr>
     </table>
 </nav>

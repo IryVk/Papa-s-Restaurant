@@ -1,0 +1,58 @@
+.rating {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    text-align: center;
+}
+
+.rating input {
+display: none;
+}
+
+.rating label {
+display: inline-block;
+padding: 5px;
+font-size: 35px;
+color: #ccc;
+cursor: pointer;
+}
+
+.rating input:checked ~ label:before,
+.rating input:hover ~ label:before {
+content: '\2605';
+color: #ffcc00;
+}
+
+.rating label:before {
+content: '\2605';
+color: #ccc;
+}
+
+.review {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+  
+.review p {
+    margin: 10px;
+    padding: 10px;
+    display: block;
+    background-color: #e4e4e4;
+    border-radius: 10px;
+}
+  
+.star {
+    color: #ffcc00 !important;
+    font-size: 25px;
+}
+
+.review-time {
+    text-align: right;
+}
+
+.review-email {
+    font-weight: bold;
+}
+  
